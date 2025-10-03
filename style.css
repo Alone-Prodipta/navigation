@@ -1,0 +1,200 @@
+body
+{
+	overflow:hidden;
+	background-image:url("spidy.jpg");
+	font-family: "Lato", sans-serif;
+	background-size:cover;
+	background-attachment:fixed;
+
+	position:relative;
+}
+.header
+{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	padding:30px;
+	  background-color: rgba(0,0, 0, 0.2);
+  -webkit-backdrop-filter: blur(3px);
+  
+	display:flex;
+	justify-content:space-between;
+	
+	align-items:center;
+	z-index:100;
+}
+.logo
+{
+	font-size:2rem;
+	color:black;
+	text-decoration:none;
+	font-weight:900;
+	
+	font-weight:bold;
+}
+.nav
+{
+	margin-right:10%;
+	z-index:1;
+}
+	
+span
+{
+	font-size:30px;
+	cursor:pointer;
+	position:absolute;
+	margin-left:90%;
+	color:transparent;
+}
+.nav a
+{
+	font-size:1.15rem;
+	color:#F2F2F2;
+	font-family:lemon;
+	text-decoration:none;
+	font-weight:500;
+	margin-left:2.5rem;
+}
+.sidenav {
+  height: 40%;
+  width: 100%;
+  position: fixed;
+
+  top: 9%;
+  left: 0;
+
+  overflow-x: hidden;
+  overflow-y:hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 1%;
+  text-decoration: none;
+  font-size: 25px;
+    color:transparent;
+  font-family:lemon;
+  display: flex;
+  transition: 0.3s;
+	justify-content:center;
+}
+
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#box
+{
+	width: 30%;
+  height: 56%;
+  position: relative;
+  z-index: 4;
+   background-color: rgba(255,255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter:blur(5px);
+  
+  float: left;
+  margin: 13%;
+  margin-left: 794px;
+  transition:3s;
+  padding-bottom:0;
+}
+
+#box>p
+{
+	font-size:xx-large;
+	text-align:center;
+	padding-left:40px;
+	padding-top:240px;
+  	color:white;
+  	font-family:delius;
+}
+#box:hover
+{
+	transform:scale(1.20);
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+@media(max-width:1000px)
+{
+	.nav
+	{
+		display:none;
+	}
+	span
+	{
+		left:-5%;
+		color:black;
+	}
+	.sidenav 
+	{
+		height: 40%;
+		width: 100%;
+		position: fixed;
+		
+		top: 96px;
+		left: 0;
+		background-color: rgba(0,0, 0, 0.2);
+		-webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+	}
+	.sidenav a 
+	 {
+		 color:black;
+	 }
+	#box
+	{
+		margin-left:468px;
+		padding:2px;
+		width:50%;
+		height:50%;
+	}
+	#box>p
+	{
+		text-align:start;
+		margin-top:-103px;
+		color:black;
+	}
+	
+}
+@media(max-width:2000px)
+{
+	#box
+	{
+		margin-left:468px;
+		padding:2px
+	}
+	#box>p
+	{
+		text-align:start;
+		margin-top:-103px;
+	}
+}
+@media(max-height:1000px)
+{
+	#box
+	{
+		margin-left:468px;
+		padding:2px;
+		height:65%;
+	}
+	#box>p
+	{
+		text-align:start;
+		margin-top:-103px;
+	}
+}
+	
